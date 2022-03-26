@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static 
-from tracer.views import Mainview, file_upload_view
+from tracer.views import Mainview, file_upload_view, file_upload_view2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Mainview.as_view(), name='main-view'),
     path('upload/', file_upload_view, name='upload-view'),
+    path('upload2/', file_upload_view2, name='upload-view2'),
 
 ]
 

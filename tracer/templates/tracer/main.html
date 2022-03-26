@@ -11,5 +11,13 @@ upload now
       <input name="file" type="file" multiple />
     </div>
 </form>
-
 {% endblock content %}
+
+{% block content2 %}
+<form action="upload2/" method="POST" class="dropzone dz" id="my-dropzone2">
+  {% csrf_token %}
+  <div class="fallback">
+    <input name="file" type="file" multiple />
+  </div>
+</form>
+{% endblock content2 %}
