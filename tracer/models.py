@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# 장고 모델
 
 class Doc(models.Model):
     upload = models.ImageField(upload_to='images/')
