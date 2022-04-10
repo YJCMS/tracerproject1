@@ -158,7 +158,7 @@ dmypy.json
 cython_debug/
 
 # secret key.json 분리
-
+secrets.json
 git rm -r --cached .
 git add .
 git commit -m "commit message"
